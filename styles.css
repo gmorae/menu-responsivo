@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.menu-top-bar {
+    width: 100%;
+    height: 64px;
+    background: transparent linear-gradient(270deg, #E8DD80 0%, #009074 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.69;
+    padding: 0 16px;
+    transition: all .2s linear;
+}
+
+.button-menu {
+    width: 26px;
+    height: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.button-menu .bar1 {
+    width: 26px;
+    height: 2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.button-menu .bar2 {
+    width: 20px;
+    height: 2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.button-menu .bar3 {
+    width: 14px;
+    height: 2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.buttons-informations {
+    display: none;
+}
+
+
+.notice {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.notice b {
+    font-weight: 500;
+    display: block;
+    margin: 4px 0;
+}
+
+.icons img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.menu-overflow {
+    width: 200px;
+    height: 100vh;
+    background: transparent linear-gradient(199deg, #BCC87D 0%, #009F88 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    transition: all .2s linear;
+    left: -200px;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-overflow.active {
+    transform: translateX(200px);
+}
+
+.menu-top-bar.active {
+    transform: translateX(200px);
+}
+
+.menu-overflow-item {
+    padding: 16px;
+    border-bottom: 1px solid #ffffff52;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.menu-overflow-item p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 8px;
+    width: 85px;
+}
+
+@media (min-width: 768px) {
+    .menu-top-bar {
+        padding: 0 96px;
+    }
+    .button-menu, .menu-overflow {
+        display: none;
+    }
+    .buttons-informations {
+        display: flex;
+    }
+    .button-information-icon {
+        width: 108px;
+        height: 42px;
+        background: transparent linear-gradient(248deg, #FFE400 0%, #C49321 100%) 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0 8px;
+        cursor: pointer;
+    }
+    .button-information-icon p {
+        font: normal normal normal 10px/12px Roboto;
+        color: #FFFFFF;
+    }
+    .button-information-icon:first-child {
+        margin-right: 8px;
+    }
+    
+}
